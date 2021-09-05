@@ -1,0 +1,5 @@
+# GET ALL SHOES
+
+@baseUrl = http://localhost:8000
+
+GET {{baseUrl}}/shoes/

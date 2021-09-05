@@ -8,6 +8,9 @@ django = "*"
 pylint = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
+django-environ = "*"
+python-dotenv = "*"
+djangorestframework-camel-case = "*"
 
 [dev-packages]
 
