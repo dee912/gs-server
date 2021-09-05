@@ -9,6 +9,15 @@ class Category(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+class Size(models.Model):
+
+    number = models.PositiveIntegerField(
+        validators=[MaxValueValidator(20)]
+    )
+
+    def __str__(self):
+        return f'Shoe size - {self.number}'
+
 class Shoe(models.Model):
 
     MALE = 'Male'
@@ -27,6 +36,11 @@ class Shoe(models.Model):
     category = models.ManyToManyField(
         'category',
         related_name='categories',
+        blank=True
+    )
+    size = models.ManyToManyField(
+        'size',
+        related_name='size',
         blank=True
     )
     image = models.CharField(max_length=250)
