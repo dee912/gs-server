@@ -6,4 +6,4 @@ GET {{baseUrl}}/shoes/
 
 ###
 
-GET  {{baseUrl}}/shoes/1
+GET  {{baseUrl}}/shoes/100
