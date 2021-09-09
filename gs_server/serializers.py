@@ -5,6 +5,11 @@ from .models import Shoe, Size, Category
 
 User = get_user_model()
 
+#! Serializers allow complex data to be converted to native Python datatypes 
+#! that can then be easily rendered into JSON, XML or other content types
+#! ModelSerializer class which provides a useful shortcut for creating 
+#! serializers that deal with model instances and querysets.
+
 class UserSerializer(serializers.ModelSerializer):
 
     class Meta:

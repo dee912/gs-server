@@ -6,6 +6,8 @@ from rest_framework import status
 from .models import Shoe
 from .serializers import ShoeSerializer
 
+#! returns new serialized data 
+
 class ShoeListView(APIView):
 
     def get(self, _request):
